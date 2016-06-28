@@ -59,10 +59,10 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="naoCompra.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="naoCompra.php"><i class="fa fa-dashboard fa-fw"></i> Estatísticas</a>
                         </li>
                         <li>
-                            <a href="naoCompraa.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard 2</a>
+                            <a href="naoCompraa.php"><i class="fa fa-dashboard fa-fw"></i> Estatísticas Avançadas</a>
                         </li>
                         <li>
                             <a href="naoCompraTabela.php"><i class="fa fa-table fa-fw"></i> Tabela</a>
@@ -77,7 +77,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">Estatísticas</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
