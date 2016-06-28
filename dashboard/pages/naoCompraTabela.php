@@ -102,18 +102,19 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                            include "../../config/conexao.php";
-                                            $dados = mysql_query("SELECT * FROM questionario");
+                                            $string = file_get_contents("../../dados.json");
+                                            $result = json_decode($string);
 
-                                            while($row = mysql_fetch_array($dados))
-                                            {
+                                            $questionario = $result->questionario;
+
+                                            foreach ($questionario as $questao) {
                                                 echo "<tr>";
-                                                echo "<td>".$row['genero']."</td>";
-                                                echo "<td>".$row['faixaEtaria']."</td>";
-                                                echo "<td>".$row['diaDaSemana']."</td>";
-                                                echo "<td>".$row['periodo']."</td>";
-                                                echo "<td>".$row['motivo']."</td>";
-                                                echo "<td>".$row['reincidente']."</td>"; 
+                                                echo "<td>".$questao->genero."</td>";
+                                                echo "<td>".$questao->faixaEtaria."</td>";
+                                                echo "<td>".$questao->diaDaSemana."</td>";
+                                                echo "<td>".$questao->periodo."</td>";
+                                                echo "<td>".$questao->motivo."</td>";
+                                                echo "<td>".$questao->reincidente."</td>";
                                                 echo "</tr>";
                                             }
                                         ?>
